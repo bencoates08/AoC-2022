@@ -92,7 +92,7 @@ func Part2() int {
 	return top3Total
 }
 
-func getSmallestIndex (arr [3]int) int {
+func getSmallestIndex(arr [3]int) int {
 	var smallestIndex int
 	for i, v := range arr {
 		if i == 0 {

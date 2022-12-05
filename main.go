@@ -1,10 +1,10 @@
 package main
 
 import (
-	"AoC-2022/day1"
+	"AoC-2022/day2"
 	"fmt"
 )
 
 func main() {
-	fmt.Print(day1.Part2())
+	fmt.Print(day2.Part2())
 }
