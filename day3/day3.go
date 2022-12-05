@@ -56,7 +56,7 @@ func Part1() int {
 		set1 := getStringSet(bags[:containerSize])
 		set2 := getStringSet(bags[containerSize:])
 		intersect := getSetIntersectionByte(set1, set2)
-		
+
 		totalPriority += getPriority(intersect)
 	}
 
@@ -74,11 +74,11 @@ func Part2() int {
 
 	for fileScanner.Scan() {
 		bags := map[int]map[string]bool{1: getStringSet(fileScanner.Text())}
-		for i:=2; i<=3; i++ {
+		for i := 2; i <= 3; i++ {
 			fileScanner.Scan()
 			bags[i] = getStringSet(fileScanner.Text())
 		}
-		
+
 		setInt1 := getSetIntersection(bags[1], bags[2])
 		setInt := getSetIntersection(setInt1, bags[3])
 
