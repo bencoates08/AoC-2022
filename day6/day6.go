@@ -40,11 +40,11 @@ func Part1(packetSize int) int {
 		}
 
 		if uniqueCharacters(group) && len(group) == packetSize {
-			break
+			return byteNum
 		}
 	}
 
-	return byteNum
+	return 0
 }
 
 func Part2() int {
