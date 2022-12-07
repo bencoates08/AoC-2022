@@ -11,15 +11,15 @@ const (
 )
 
 func uniqueCharacters(str string) bool {
-    for i := 0; i < len(str) - 1; i++ {
-        for j := i + 1; j < len(str); j++ {
-            if (str[i] == str[j]) {
-                return false;
-            }
-        }
-    }
+	for i := 0; i < len(str)-1; i++ {
+		for j := i + 1; j < len(str); j++ {
+			if str[i] == str[j] {
+				return false
+			}
+		}
+	}
 
-    return true;
+	return true
 }
 
 func Part1(packetSize int) int {
