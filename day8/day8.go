@@ -111,7 +111,7 @@ func Part1() int {
 
 func treesVisivleFromTree(trees [][]int, x, y int) int {
 	treesRight := 0
-	for i := x+1; i < len(trees); i++ {
+	for i := x + 1; i < len(trees); i++ {
 		if trees[y][i] < trees[y][x] {
 			treesRight++
 		} else {
@@ -121,7 +121,7 @@ func treesVisivleFromTree(trees [][]int, x, y int) int {
 	}
 
 	treesLeft := 0
-	for i := x-1; i >= 0; i-- {
+	for i := x - 1; i >= 0; i-- {
 		if trees[y][i] < trees[y][x] {
 			treesLeft++
 		} else {
@@ -131,7 +131,7 @@ func treesVisivleFromTree(trees [][]int, x, y int) int {
 	}
 
 	treesBottom := 0
-	for i := y+1; i < len(trees); i++ {
+	for i := y + 1; i < len(trees); i++ {
 		if trees[i][x] < trees[y][x] {
 			treesBottom++
 		} else {
@@ -141,7 +141,7 @@ func treesVisivleFromTree(trees [][]int, x, y int) int {
 	}
 
 	treesTop := 0
-	for i := y-1; i >= 0; i-- {
+	for i := y - 1; i >= 0; i-- {
 		if trees[i][x] < trees[y][x] {
 			treesTop++
 		} else {
@@ -194,4 +194,3 @@ func Part2() int {
 
 	return bestScore
 }
-
